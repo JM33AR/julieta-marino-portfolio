@@ -6,7 +6,7 @@
 
 <title>Julieta Marino | Product Enthusiast | AI-Assisted Builder</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -23,14 +23,14 @@ html{
 body{
     font-family:'Inter',sans-serif;
     background:#0a0a0a;
-    color:white;
+    color:#ffffff;
     line-height:1.7;
 }
 
 .container{
     max-width:1100px;
     margin:auto;
-    padding:40px 20px;
+    padding:40px 24px;
 }
 
 .hero{
@@ -41,77 +41,92 @@ body{
 }
 
 .hero h1{
-    font-size:4rem;
-    font-weight:700;
-    margin-bottom:10px;
+    font-size:clamp(3rem,6vw,5rem);
+    font-weight:800;
+    line-height:1.1;
+    max-width:850px;
+    margin-bottom:25px;
 }
 
 .hero h2{
-    font-size:1.4rem;
-    font-weight:400;
+    font-size:1.2rem;
     color:#9ca3af;
-    margin-bottom:25px;
+    font-weight:500;
+    margin-bottom:20px;
 }
 
 .hero p{
     max-width:700px;
-    font-size:1.1rem;
     color:#d1d5db;
+    font-size:1.15rem;
 }
 
 .btn{
     display:inline-block;
-    margin-top:30px;
+    width:fit-content;
+    margin-top:35px;
     padding:14px 28px;
     background:white;
     color:black;
     text-decoration:none;
-    border-radius:10px;
+    border-radius:12px;
     font-weight:600;
     transition:.3s;
 }
 
 .btn:hover{
-    transform:translateY(-2px);
+    transform:translateY(-3px);
 }
 
 section{
     padding:100px 0;
-    border-top:1px solid #222;
+    border-top:1px solid #1f1f1f;
 }
 
 .section-title{
-    font-size:2rem;
-    margin-bottom:30px;
+    font-size:2.2rem;
+    font-weight:700;
+    margin-bottom:25px;
 }
 
-.about p{
+.section-text{
     max-width:850px;
     color:#d1d5db;
+    font-size:1.05rem;
 }
 
 .card{
-    background:#111;
+    background:#111111;
     border:1px solid #222;
-    border-radius:20px;
-    padding:35px;
+    border-radius:24px;
+    padding:40px;
     margin-top:30px;
 }
 
 .card h3{
     font-size:2rem;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .card h4{
     margin-top:25px;
     margin-bottom:10px;
-    color:white;
+    font-size:1.1rem;
 }
 
 .card p{
     color:#d1d5db;
-    margin-bottom:15px;
+}
+
+.project-image{
+    width:80%;
+    max-width:850px;
+    height:auto;
+    display:block;
+    margin:0 auto 35px auto;
+    border-radius:20px;
+    border:1px solid #222;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
 }
 
 .skills{
@@ -122,11 +137,20 @@ section{
 }
 
 .skill{
-    background:#1f1f1f;
+    background:#1a1a1a;
+    border:1px solid #2b2b2b;
     padding:10px 16px;
     border-radius:999px;
     font-size:.9rem;
-    border:1px solid #2b2b2b;
+}
+
+ul{
+    padding-left:20px;
+    color:#d1d5db;
+}
+
+li{
+    margin-bottom:8px;
 }
 
 .contact{
@@ -134,10 +158,10 @@ section{
 }
 
 .contact a{
-    color:white;
-    text-decoration:none;
     display:block;
     margin-top:15px;
+    color:white;
+    text-decoration:none;
     transition:.3s;
 }
 
@@ -148,183 +172,205 @@ section{
 footer{
     padding:50px;
     text-align:center;
-    color:#777;
-    border-top:1px solid #222;
+    color:#666;
+    border-top:1px solid #1f1f1f;
 }
 
-ul{
-    margin-top:10px;
+.highlight{
+    color:white;
+    font-weight:600;
 }
 
-li{
-    margin-bottom:8px;
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .project-image{
+        width:100%;
+    }
+
+    .card{
+        padding:25px;
+    }
+
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- HERO -->
+<section class="hero">
 
-    <section class="hero">
+<h1>
+Building digital products that solve real problems.
+</h1>
 
-        <h1>Julieta Marino</h1>
+<h2>
+Product Enthusiast • AI-Assisted Builder
+</h2>
 
-        <h2>Product Enthusiast | AI-Assisted Builder</h2>
+<p>
+I enjoy identifying opportunities, validating ideas and transforming business problems into digital solutions through product thinking, experimentation and continuous learning.
+</p>
 
-        <p>
-            Passionate about identifying real-world problems and transforming ideas into digital products.
-            Currently focused on Product Management, Agile Methodologies, English learning, and building MVPs that solve meaningful business challenges.
-        </p>
+<a href="#projects" class="btn">
+View Projects
+</a>
 
-        <a href="#projects" class="btn">
-            View Projects
-        </a>
+</section>
 
-    </section>
+<section>
 
-    <!-- ABOUT -->
+<h2 class="section-title">
+About Me
+</h2>
 
-    <section class="about">
+<p class="section-text">
+My background includes web development studies and hands-on experience building digital projects. Over time, I discovered that I am most interested in understanding user problems, defining solutions and creating products that generate value.
+</p>
 
-        <h2 class="section-title">About Me</h2>
+<br>
 
-        <p>
-            I have a background in web development studies and a growing interest in Product Management, digital products, and business problem-solving.
-        </p>
+<p class="section-text">
+Today I am focused on Product Management, Agile Methodologies, English learning and AI-assisted product development while continuing to expand my technical foundations.
+</p>
 
-        <br>
+</section>
 
-        <p>
-            My experience combines technical foundations with product thinking, allowing me to explore opportunities, define solutions, and build MVPs using modern tools and AI-assisted development.
-        </p>
+<section>
 
-        <br>
+<h2 class="section-title">
+Projects & Product Thinking
+</h2>
 
-        <p>
-            I am currently focused on improving my English, learning Agile methodologies, and developing the skills required to grow as a Product Owner.
-        </p>
+<p class="section-text">
+I enjoy exploring the intersection between business, technology and user needs. My approach is centered on identifying real problems, validating assumptions and creating MVPs that can evolve through feedback and iteration.
+</p>
 
-    </section>
+</section>
 
-    <!-- PROJECT -->
+<section id="projects">
 
-    <section id="projects">
+<h2 class="section-title">
+Featured Project
+</h2>
 
-        <h2 class="section-title">Featured Project</h2>
+<div class="card">
 
-        <div class="card">
-
-            <h3>FitCheck</h3>
-
-            <img
-src="screenshot.png"
+<img
+src="images/fitcheck-preview.png"
 alt="FitCheck Preview"
 class="project-image"
 >
 
-            <p>
-                FitCheck is a product concept designed to reduce clothing returns caused by incorrect size selection in ecommerce.
-            </p>
+<h3>FitCheck</h3>
 
-            <h4>Problem</h4>
+<p>
+FitCheck is a product concept designed to reduce clothing returns caused by incorrect size selection in ecommerce.
+</p>
 
-            <p>
-                Online stores lose revenue and customer satisfaction due to returns caused by incorrect sizing decisions.
-            </p>
+<h4>Problem</h4>
 
-            <h4>Solution</h4>
+<p>
+Fashion ecommerce stores lose revenue and customer satisfaction due to returns caused by incorrect sizing decisions.
+</p>
 
-            <p>
-                FitCheck provides personalized size recommendations to help customers choose the right size before purchasing.
-            </p>
+<h4>Solution</h4>
 
-            <h4>My Contribution</h4>
+<p>
+FitCheck provides personalized size recommendations that help shoppers choose the correct size before completing a purchase.
+</p>
 
-            <ul style="padding-left:20px;color:#d1d5db;">
+<h4>My Contribution</h4>
 
-                <li>Product ideation</li>
-                <li>Problem discovery</li>
-                <li>User journey design</li>
-                <li>Feature prioritization</li>
-                <li>API research</li>
-                <li>MVP definition</li>
-                <li>AI-assisted implementation</li>
+<ul>
 
-            </ul>
+<li>Product ideation</li>
+<li>Problem discovery</li>
+<li>User journey mapping</li>
+<li>Feature prioritization</li>
+<li>API research</li>
+<li>MVP definition</li>
+<li>AI-assisted implementation</li>
 
-            <div class="skills">
+</ul>
 
-                <span class="skill">HTML</span>
-                <span class="skill">CSS</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">OAuth 2.0</span>
-                <span class="skill">Shopify API</span>
-                <span class="skill">Mercado Libre API</span>
-                <span class="skill">GitHub</span>
+<div class="skills">
 
-            </div>
+<span class="skill">Product Thinking</span>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">OAuth 2.0</span>
+<span class="skill">Shopify API</span>
+<span class="skill">Mercado Libre API</span>
+<span class="skill">GitHub</span>
 
-            <a
-                href="https://github.com/JM33AR/Checkfitapp"
-                target="_blank"
-                class="btn"
-            >
-                View Repository
-            </a>
+</div>
 
-        </div>
+<a
+href="https://github.com/JM33AR/Checkfitapp"
+target="_blank"
+class="btn"
+>
+View Repository
+</a>
 
-    </section>
+</div>
 
-    <!-- LEARNING -->
+</section>
 
-    <section>
+<section>
 
-        <h2 class="section-title">Currently Learning</h2>
+<h2 class="section-title">
+Currently Learning
+</h2>
 
-        <div class="skills">
+<div class="skills">
 
-            <span class="skill">Product Ownership</span>
-            <span class="skill">Scrum</span>
-            <span class="skill">Kanban</span>
-            <span class="skill">Product Discovery</span>
-            <span class="skill">Agile Methodologies</span>
-            <span class="skill">English</span>
-            <span class="skill">AI-Assisted Product Development</span>
+<span class="skill">Product Ownership</span>
+<span class="skill">Scrum</span>
+<span class="skill">Kanban</span>
+<span class="skill">Product Discovery</span>
+<span class="skill">Agile Methodologies</span>
+<span class="skill">English</span>
+<span class="skill">AI-Assisted Product Development</span>
 
-        </div>
+</div>
 
-    </section>
+</section>
 
-    <!-- CONTACT -->
+<section class="contact">
 
-    <section class="contact">
+<h2 class="section-title">
+Contact
+</h2>
 
-        <h2 class="section-title">Contact</h2>
+<a href="https://github.com/JM33AR" target="_blank">
+GitHub
+</a>
 
-        <a href="https://github.com/JM33AR" target="_blank">
-            GitHub
-        </a>
+<a href="https://linkedin.com/in/TU-LINKEDIN" target="_blank">
+LinkedIn
+</a>
 
-        <a href="https://linkedin.com/in/TU-LINKEDIN" target="_blank">
-            LinkedIn
-        </a>
+<a href="mailto:julietamilka@gmail.com">
+julietamilka@gmail.com
+</a>
 
-        <a href="mailto:julietamilka@gmail.com">
-            julietamilka@gmail.com
-        </a>
-
-    </section>
+</section>
 
 </div>
 
 <footer>
-    © 2026 Julieta Marino
+
+© 2026 Julieta Marino
+
 </footer>
 
 </body>
