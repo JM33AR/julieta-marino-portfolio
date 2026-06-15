@@ -11,189 +11,188 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:#0a0a0a;
-    color:#ffffff;
-    line-height:1.7;
+font-family:'Inter',sans-serif;
+background:#0a0a0a;
+color:#fff;
+line-height:1.7;
 }
 
 .container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px 24px;
+max-width:1100px;
+margin:auto;
+padding:40px 24px;
 }
 
 .hero{
-    min-height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+min-height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero-name{
+font-size:1rem;
+color:#9ca3af;
+margin-bottom:20px;
+letter-spacing:2px;
+text-transform:uppercase;
 }
 
 .hero h1{
-    font-size:clamp(3rem,6vw,5rem);
-    font-weight:800;
-    line-height:1.1;
-    max-width:850px;
-    margin-bottom:25px;
+font-size:clamp(3rem,6vw,5rem);
+font-weight:800;
+line-height:1.1;
+max-width:850px;
+margin-bottom:20px;
 }
 
 .hero h2{
-    font-size:1.2rem;
-    color:#9ca3af;
-    font-weight:500;
-    margin-bottom:20px;
+font-size:1.2rem;
+font-weight:500;
+color:#9ca3af;
+margin-bottom:20px;
 }
 
 .hero p{
-    max-width:700px;
-    color:#d1d5db;
-    font-size:1.15rem;
+max-width:700px;
+font-size:1.1rem;
+color:#d1d5db;
 }
 
 .btn{
-    display:inline-block;
-    width:fit-content;
-    margin-top:35px;
-    padding:14px 28px;
-    background:white;
-    color:black;
-    text-decoration:none;
-    border-radius:12px;
-    font-weight:600;
-    transition:.3s;
+display:inline-block;
+margin-top:35px;
+padding:14px 28px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:12px;
+font-weight:600;
+transition:.3s;
 }
 
 .btn:hover{
-    transform:translateY(-3px);
+transform:translateY(-3px);
 }
 
 section{
-    padding:100px 0;
-    border-top:1px solid #1f1f1f;
+padding:100px 0;
+border-top:1px solid #1f1f1f;
 }
 
 .section-title{
-    font-size:2.2rem;
-    font-weight:700;
-    margin-bottom:25px;
+font-size:2.2rem;
+font-weight:700;
+margin-bottom:25px;
 }
 
 .section-text{
-    max-width:850px;
-    color:#d1d5db;
-    font-size:1.05rem;
+max-width:850px;
+color:#d1d5db;
 }
 
 .card{
-    background:#111111;
-    border:1px solid #222;
-    border-radius:24px;
-    padding:40px;
-    margin-top:30px;
+background:#111;
+border:1px solid #222;
+border-radius:24px;
+padding:40px;
+margin-top:30px;
 }
 
 .card h3{
-    font-size:2rem;
-    margin-bottom:20px;
+font-size:2rem;
+margin-bottom:15px;
 }
 
 .card h4{
-    margin-top:25px;
-    margin-bottom:10px;
-    font-size:1.1rem;
+margin-top:25px;
+margin-bottom:10px;
 }
 
 .card p{
-    color:#d1d5db;
+color:#d1d5db;
 }
 
 .project-image{
-    width:80%;
-    max-width:850px;
-    height:auto;
-    display:block;
-    margin:0 auto 35px auto;
-    border-radius:20px;
-    border:1px solid #222;
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
+width:80%;
+max-width:850px;
+height:auto;
+display:block;
+margin:0 auto 35px auto;
+border-radius:20px;
+border:1px solid #222;
+box-shadow:0 20px 60px rgba(0,0,0,.35);
 }
 
 .skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:25px;
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:25px;
 }
 
 .skill{
-    background:#1a1a1a;
-    border:1px solid #2b2b2b;
-    padding:10px 16px;
-    border-radius:999px;
-    font-size:.9rem;
+background:#1a1a1a;
+border:1px solid #2b2b2b;
+padding:10px 16px;
+border-radius:999px;
+font-size:.9rem;
 }
 
 ul{
-    padding-left:20px;
-    color:#d1d5db;
+padding-left:20px;
+color:#d1d5db;
 }
 
 li{
-    margin-bottom:8px;
+margin-bottom:8px;
 }
 
 .contact{
-    text-align:center;
+text-align:center;
 }
 
 .contact a{
-    display:block;
-    margin-top:15px;
-    color:white;
-    text-decoration:none;
-    transition:.3s;
+display:block;
+margin-top:15px;
+color:white;
+text-decoration:none;
 }
 
 .contact a:hover{
-    color:#9ca3af;
+color:#9ca3af;
 }
 
 footer{
-    padding:50px;
-    text-align:center;
-    color:#666;
-    border-top:1px solid #1f1f1f;
-}
-
-.highlight{
-    color:white;
-    font-weight:600;
+padding:50px;
+text-align:center;
+color:#666;
+border-top:1px solid #1f1f1f;
 }
 
 @media(max-width:768px){
 
-    .hero h1{
-        font-size:2.8rem;
-    }
+.hero h1{
+font-size:2.8rem;
+}
 
-    .project-image{
-        width:100%;
-    }
+.project-image{
+width:100%;
+}
 
-    .card{
-        padding:25px;
-    }
+.card{
+padding:25px;
+}
 
 }
 
@@ -206,16 +205,20 @@ footer{
 
 <section class="hero">
 
+<div class="hero-name">
+Julieta Marino
+</div>
+
 <h1>
 Building digital products that solve real problems.
 </h1>
 
 <h2>
-Product Enthusiast • AI-Assisted Builder
+Product Enthusiast • Digital Problem Solver • AI-Assisted Builder
 </h2>
 
 <p>
-I enjoy identifying opportunities, validating ideas and transforming business problems into digital solutions through product thinking, experimentation and continuous learning.
+I enjoy connecting business needs, technology and user experience to create practical digital solutions.
 </p>
 
 <a href="#projects" class="btn">
@@ -227,17 +230,23 @@ View Projects
 <section>
 
 <h2 class="section-title">
-About Me
+Who I Am
 </h2>
 
 <p class="section-text">
-My background includes web development studies and hands-on experience building digital projects. Over time, I discovered that I am most interested in understanding user problems, defining solutions and creating products that generate value.
+Hi, I'm Julieta Marino, a professional transitioning into Product Management with a foundation in web development and a strong interest in digital products, business processes and technology.
 </p>
 
 <br>
 
 <p class="section-text">
-Today I am focused on Product Management, Agile Methodologies, English learning and AI-assisted product development while continuing to expand my technical foundations.
+My background includes studies in Full Stack Web Development, where I learned the fundamentals of HTML, CSS, JavaScript, databases and software development concepts.
+</p>
+
+<br>
+
+<p class="section-text">
+Today I focus on understanding user problems, exploring product opportunities and building MVPs using modern tools and AI-assisted development.
 </p>
 
 </section>
@@ -251,6 +260,32 @@ Projects & Product Thinking
 <p class="section-text">
 I enjoy exploring the intersection between business, technology and user needs. My approach is centered on identifying real problems, validating assumptions and creating MVPs that can evolve through feedback and iteration.
 </p>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Skills & Tools
+</h2>
+
+<div class="skills">
+
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">MySQL</span>
+<span class="skill">Git</span>
+<span class="skill">GitHub</span>
+<span class="skill">REST APIs</span>
+<span class="skill">OAuth 2.0</span>
+<span class="skill">Shopify API</span>
+<span class="skill">Mercado Libre API</span>
+<span class="skill">Product Thinking</span>
+<span class="skill">Problem Solving</span>
+<span class="skill">AI-Assisted Development</span>
+
+</div>
 
 </section>
 
@@ -268,25 +303,33 @@ alt="FitCheck Preview"
 class="project-image"
 >
 
-<h3>FitCheck</h3>
+<h3>
+FitCheck
+</h3>
 
 <p>
 FitCheck is a product concept designed to reduce clothing returns caused by incorrect size selection in ecommerce.
 </p>
 
-<h4>Problem</h4>
+<h4>
+Problem
+</h4>
 
 <p>
 Fashion ecommerce stores lose revenue and customer satisfaction due to returns caused by incorrect sizing decisions.
 </p>
 
-<h4>Solution</h4>
+<h4>
+Solution
+</h4>
 
 <p>
 FitCheck provides personalized size recommendations that help shoppers choose the correct size before completing a purchase.
 </p>
 
-<h4>My Contribution</h4>
+<h4>
+My Contribution
+</h4>
 
 <ul>
 
@@ -309,7 +352,6 @@ FitCheck provides personalized size recommendations that help shoppers choose th
 <span class="skill">OAuth 2.0</span>
 <span class="skill">Shopify API</span>
 <span class="skill">Mercado Libre API</span>
-<span class="skill">GitHub</span>
 
 </div>
 
@@ -368,9 +410,7 @@ julietamilka@gmail.com
 </div>
 
 <footer>
-
 © 2026 Julieta Marino
-
 </footer>
 
 </body>
