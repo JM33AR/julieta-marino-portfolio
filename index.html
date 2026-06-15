@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Julieta Marino | Product Owner Portfolio</title>
+<title>Julieta Marino | Product Enthusiast | AI-Assisted Builder</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,368 +16,398 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:'Inter',sans-serif;
-background:#f8fafc;
-color:#1e293b;
-line-height:1.6;
+background:#0a0a0a;
+color:#fff;
+line-height:1.7;
 }
 
 .container{
-max-width:1200px;
+max-width:1100px;
 margin:auto;
-padding:0 40px;
-}
-
-header{
-padding:100px 0;
-background:white;
+padding:40px 24px;
 }
 
 .hero{
+min-height:90vh;
 display:flex;
-align-items:center;
-justify-content:space-between;
-gap:60px;
+flex-direction:column;
+justify-content:center;
 }
 
-.hero-text{
-flex:1;
+.hero-name{
+font-size:1rem;
+color:#9ca3af;
+margin-bottom:20px;
+letter-spacing:2px;
+text-transform:uppercase;
 }
 
-.hero-text h1{
-font-size:56px;
-font-weight:700;
+.hero h1{
+font-size:clamp(3rem,6vw,5rem);
+font-weight:800;
+line-height:1.1;
+max-width:850px;
 margin-bottom:20px;
 }
 
-.hero-text span{
-color:#2563eb;
+.hero h2{
+font-size:1.2rem;
+font-weight:500;
+color:#9ca3af;
+margin-bottom:20px;
 }
 
-.hero-text p{
-font-size:20px;
-color:#64748b;
-max-width:600px;
-margin-bottom:30px;
+.hero p{
+max-width:700px;
+font-size:1.1rem;
+color:#d1d5db;
 }
 
-.button{
+.btn{
 display:inline-block;
-background:#2563eb;
-color:white;
+margin-top:35px;
 padding:14px 28px;
+background:white;
+color:black;
 text-decoration:none;
 border-radius:12px;
 font-weight:600;
 transition:.3s;
 }
 
-.button:hover{
-background:#1d4ed8;
-}
-
-.hero-image{
-width:280px;
-height:280px;
-border-radius:50%;
-overflow:hidden;
-box-shadow:0 20px 40px rgba(0,0,0,.1);
-}
-
-.hero-image img{
-width:100%;
-height:100%;
-object-fit:cover;
+.btn:hover{
+transform:translateY(-3px);
 }
 
 section{
 padding:100px 0;
+border-top:1px solid #1f1f1f;
 }
 
 .section-title{
-font-size:40px;
-margin-bottom:40px;
-text-align:center;
+font-size:2.2rem;
+font-weight:700;
+margin-bottom:25px;
 }
 
-.about{
-max-width:900px;
-margin:auto;
-text-align:center;
-font-size:20px;
-color:#475569;
+.section-text{
+max-width:850px;
+color:#d1d5db;
 }
 
-.fitcheck{
-background:white;
+.card{
+background:#111;
+border:1px solid #222;
 border-radius:24px;
-padding:50px;
-box-shadow:0 10px 30px rgba(0,0,0,.05);
+padding:40px;
+margin-top:30px;
 }
 
-.fitcheck h3{
-font-size:34px;
-margin-bottom:20px;
+.card h3{
+font-size:2rem;
+margin-bottom:15px;
 }
 
-.fitcheck p{
-font-size:18px;
-margin-bottom:20px;
-}
-
-.highlight{
-color:#2563eb;
-font-weight:600;
-}
-
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.skill-card{
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-.skill-card h4{
+.card h4{
+margin-top:25px;
 margin-bottom:10px;
-font-size:20px;
 }
 
-.roadmap{
-display:grid;
-gap:20px;
+.card p{
+color:#d1d5db;
 }
 
-.roadmap-item{
-background:white;
-padding:25px;
-border-radius:18px;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
+.project-image{
+width:80%;
+max-width:850px;
+height:auto;
+display:block;
+margin:0 auto 35px auto;
+border-radius:20px;
+border:1px solid #222;
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:25px;
+}
+
+.skill{
+background:#1a1a1a;
+border:1px solid #2b2b2b;
+padding:10px 16px;
+border-radius:999px;
+font-size:.9rem;
+}
+
+ul{
+padding-left:20px;
+color:#d1d5db;
+}
+
+li{
+margin-bottom:8px;
 }
 
 .contact{
 text-align:center;
 }
 
-.contact p{
-font-size:20px;
-margin-bottom:20px;
+.contact a{
+display:block;
+margin-top:15px;
+color:white;
+text-decoration:none;
+}
+
+.contact a:hover{
+color:#9ca3af;
 }
 
 footer{
-padding:30px;
+padding:50px;
 text-align:center;
-color:#64748b;
+color:#666;
+border-top:1px solid #1f1f1f;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.project-image{
+width:100%;
+}
+
+.card{
+padding:25px;
+}
+
 }
 
 </style>
 </head>
+
 <body>
 
-<header>
 <div class="container">
 
-<div class="hero">
+<section class="hero">
 
-<div class="hero-text">
+<div class="hero-name">
+Julieta Marino
+</div>
 
 <h1>
-Julieta Marino
-<br>
-<span>Product Enthusiast & AI-Assisted Builder</span>
+Building digital products that solve real problems.
 </h1>
 
+<h2>
+Product Enthusiast • Digital Problem Solver • AI-Assisted Builder
+</h2>
+
 <p>
-I enjoy turning user problems into scalable digital products.
-Currently building FitCheck, a Shopify-compatible sizing widget designed to reduce uncertainty and improve conversion rates in e-commerce.
+I enjoy connecting business needs, technology and user experience to create practical digital solutions.
 </p>
 
-<a href="#fitcheck" class="button">
-View My Product
+<a href="#projects" class="btn">
+View Projects
 </a>
 
-</div>
-
-<div class="hero-image">
-<img src="foto.jpg" alt="Julieta Marino">
-</div>
-
-</div>
-
-</div>
-</header>
+</section>
 
 <section>
 
-<div class="container">
-
 <h2 class="section-title">
-About Me
+Who I Am
 </h2>
 
-<div class="about">
-
-<p>
-I am transitioning into Product Management with a strong interest in user experience, product strategy, AI-powered tools and digital business growth.
-
-My approach combines customer empathy, structured problem solving and rapid experimentation.
-
-I am currently leading the design and development of FitCheck, where I define requirements, prioritize features, validate assumptions and coordinate implementation using AI-assisted workflows.
+<p class="section-text">
+Hi, I'm Julieta Marino, a professional transitioning into Product Management with a foundation in web development and a strong interest in digital products, business processes and technology.
 </p>
 
-</div>
+<br>
+
+<p class="section-text">
+My background includes studies in Full Stack Web Development, where I learned the fundamentals of HTML, CSS, JavaScript, databases and software development concepts.
+</p>
+
+<br>
+
+<p class="section-text">
+Today I focus on understanding user problems, exploring product opportunities and building MVPs using modern tools and AI-assisted development.
+</p>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Projects & Product Thinking
+</h2>
+
+<p class="section-text">
+I enjoy exploring the intersection between business, technology and user needs. My approach is centered on identifying real problems, validating assumptions and creating MVPs that can evolve through feedback and iteration.
+</p>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Skills & Tools
+</h2>
+
+<div class="skills">
+
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">MySQL</span>
+<span class="skill">Git</span>
+<span class="skill">GitHub</span>
+<span class="skill">REST APIs</span>
+<span class="skill">OAuth 2.0</span>
+<span class="skill">Shopify API</span>
+<span class="skill">Mercado Libre API</span>
+<span class="skill">Product Thinking</span>
+<span class="skill">Problem Solving</span>
+<span class="skill">AI-Assisted Development</span>
 
 </div>
 
 </section>
 
-<section id="fitcheck">
-
-<div class="container">
+<section id="projects">
 
 <h2 class="section-title">
 Featured Project
 </h2>
 
-<div class="fitcheck">
+<div class="card">
 
-<h3>FitCheck</h3>
+<img
+src="images/fitcheck-preview.png"
+alt="FitCheck Preview"
+class="project-image"
+>
+
+<h3>
+FitCheck
+</h3>
 
 <p>
-A Shopify-compatible sizing widget designed to help online shoppers choose the correct size before purchasing.
+FitCheck is a product concept designed to reduce clothing returns caused by incorrect size selection in ecommerce.
 </p>
+
+<h4>
+Problem
+</h4>
 
 <p>
-The goal is to reduce returns, improve customer confidence and increase conversion rates.
+Fashion ecommerce stores lose revenue and customer satisfaction due to returns caused by incorrect sizing decisions.
 </p>
+
+<h4>
+Solution
+</h4>
 
 <p>
-As Product Owner I am responsible for:
+FitCheck provides personalized size recommendations that help shoppers choose the correct size before completing a purchase.
 </p>
 
-<ul style="margin-left:20px;">
+<h4>
+My Contribution
+</h4>
+
+<ul>
+
+<li>Product ideation</li>
 <li>Problem discovery</li>
-<li>User research</li>
+<li>User journey mapping</li>
 <li>Feature prioritization</li>
-<li>Product roadmap</li>
-<li>Requirement definition</li>
-<li>AI-assisted prototyping</li>
-<li>Validation and iteration</li>
+<li>API research</li>
+<li>MVP definition</li>
+<li>AI-assisted implementation</li>
+
 </ul>
 
-</div>
+<div class="skills">
+
+<span class="skill">Product Thinking</span>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">OAuth 2.0</span>
+<span class="skill">Shopify API</span>
+<span class="skill">Mercado Libre API</span>
 
 </div>
 
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">
-Product Skills
-</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">
-<h4>Product Discovery</h4>
-<p>Understanding users, identifying pain points and validating opportunities.</p>
-</div>
-
-<div class="skill-card">
-<h4>Roadmap Planning</h4>
-<p>Prioritizing initiatives according to impact and effort.</p>
-</div>
-
-<div class="skill-card">
-<h4>User Experience</h4>
-<p>Designing intuitive experiences focused on outcomes.</p>
-</div>
-
-<div class="skill-card">
-<h4>AI-Assisted Development</h4>
-<p>Leveraging AI tools to accelerate product delivery.</p>
-</div>
-
-<div class="skill-card">
-<h4>Data-Informed Decisions</h4>
-<p>Using metrics and feedback to improve products.</p>
-</div>
-
-<div class="skill-card">
-<h4>Stakeholder Communication</h4>
-<p>Aligning product goals with business needs.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">
-FitCheck Roadmap
-</h2>
-
-<div class="roadmap">
-
-<div class="roadmap-item">
-✅ MVP Definition
-</div>
-
-<div class="roadmap-item">
-🚧 Shopify Integration
-</div>
-
-<div class="roadmap-item">
-🚧 Merchant Dashboard
-</div>
-
-<div class="roadmap-item">
-🔜 Analytics Module
-</div>
-
-<div class="roadmap-item">
-🔜 AI-Powered Size Recommendations
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container contact">
-
-<h2 class="section-title">
-Let's Connect
-</h2>
-
-<p>
-Interested in product management, digital products or AI-assisted workflows?
-</p>
-
-<a href="mailto:your@email.com" class="button">
-Contact Me
+<a
+href="https://github.com/JM33AR/Checkfitapp"
+target="_blank"
+class="btn"
+>
+View Repository
 </a>
 
 </div>
 
 </section>
+
+<section>
+
+<h2 class="section-title">
+Currently Learning
+</h2>
+
+<div class="skills">
+
+<span class="skill">Product Ownership</span>
+<span class="skill">Scrum</span>
+<span class="skill">Kanban</span>
+<span class="skill">Product Discovery</span>
+<span class="skill">Agile Methodologies</span>
+<span class="skill">English</span>
+<span class="skill">AI-Assisted Product Development</span>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<a href="https://github.com/JM33AR" target="_blank">
+GitHub
+</a>
+
+<a href="https://linkedin.com/in/TU-LINKEDIN" target="_blank">
+LinkedIn
+</a>
+
+<a href="mailto:julietamilka@gmail.com">
+julietamilka@gmail.com
+</a>
+
+</section>
+
+</div>
 
 <footer>
 © 2026 Julieta Marino
