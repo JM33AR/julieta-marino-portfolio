@@ -43,11 +43,79 @@ body{
     padding:40px 24px;
 }
 
-.hero{
+<section class="hero">
+
+<div class="hero-content">
+
+    <div class="hero-text">
+
+        <h2>
+        Julieta Marino
+        </h2>
+
+        <h1>
+        Aspiring Product Manager building AI-powered digital products.
+        </h1>
+
+        <p>
+        I enjoy identifying opportunities, validating ideas and transforming business problems into digital solutions through product thinking, experimentation and continuous learning.
+        </p>
+
+        <a href="#projects" class="btn">
+        View Projects
+        </a>
+
+    </div>
+
+    <img
+    src="profile.png"
+    alt="Julieta Marino"
+    class="profile-image"
+    >
+
+</div>
+
+</section>
+
+    .hero{
     min-height:90vh;
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    width:100%;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.profile-image{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:24px;
+    border:3px solid #222;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+@media(max-width:768px){
+
+    .hero-content{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .profile-image{
+        width:220px;
+        height:220px;
+    }
+
 }
 
 .hero h1{
